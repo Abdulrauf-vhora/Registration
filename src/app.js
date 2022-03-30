@@ -43,6 +43,7 @@ app.get('/logout', auth, async (req, res) => {
     res.status(500).send(e);
   }
 });
+
 app.get('/register', (req, res) => {
   res.render('register');
 });
